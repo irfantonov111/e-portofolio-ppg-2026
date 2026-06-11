@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-brand-primary: #0D9488; /* Teal 600 */
+  --color-brand-secondary: #2563EB; /* Blue 600 */
+  --color-brand-accent: #F59E0B; /* Amber 500 */
+  --color-brand-bg: #F0F9FF; /* Sky 50 */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.glass-dark {
+  background: rgba(13, 148, 136, 0.1); /* Using brand primary with low opacity */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.bg-gradient-mesh {
+  background-color: #F0F9FF;
+  background-image: 
+    radial-gradient(at 0% 0%, #CCFBF1 0px, transparent 50%),
+    radial-gradient(at 50% 0%, #DBEAFE 0px, transparent 50%),
+    radial-gradient(at 100% 0%, #FEF3C7 0px, transparent 50%),
+    radial-gradient(at 0% 50%, #E0F2FE 0px, transparent 50%),
+    radial-gradient(at 100% 50%, #F0FDFA 0px, transparent 50%),
+    radial-gradient(at 0% 100%, #CCFBF1 0px, transparent 50%),
+    radial-gradient(at 50% 100%, #FEF3C7 0px, transparent 50%),
+    radial-gradient(at 100% 100%, #DBEAFE 0px, transparent 50%);
+}
