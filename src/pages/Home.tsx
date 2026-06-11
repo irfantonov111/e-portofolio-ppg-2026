@@ -40,7 +40,7 @@ export const Home = ({ onNavigate }: HomeProps) => {
         <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8 }} className="relative">
           <div className="absolute inset-0 bg-brand-primary/20 blur-3xl rounded-full -z-10"></div>
           <GlassCard className="aspect-square max-w-md mx-auto p-4 rotate-3 hover:rotate-0 transition-transform duration-500 border-brand-primary/20">
-            <img src="/img/foto-formal.jpg" alt="Profile" className="w-full h-full object-cover rounded-2xl shadow-inner mb-4" />
+            <img src="img/foto-formal.jpg" alt="Profile" className="w-full h-full object-cover rounded-2xl shadow-inner mb-4" />
             <div className="flex justify-between items-center px-2">
               <div>
                 <h4 className="font-bold text-slate-800">Irfan Hananto</h4>
